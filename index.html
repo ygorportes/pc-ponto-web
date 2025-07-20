@@ -10,6 +10,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <link rel="stylesheet" href="src/styles/style.css" />
     <title>PcPontoWeb</title>
   </head>
@@ -29,7 +35,7 @@
             <li class="list-item">
               <a href=""><i class="fa-regular fa-calendar"></i>Afastamentos</a>
             </li>
-            <li class="list-item"> 
+            <li class="list-item">
               <a href=""><i class="fa-regular fa-clock"></i>Ponto</a>
             </li>
             <li class="list-item">
@@ -40,7 +46,20 @@
             </li>
           </ul>
         </div>
+
+        <button class="mobile_btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </nav>
+      <div class="mobile_menu">
+        <ul class="mobile_nav_list">
+          <li class="list-item"><a href="#">Notificações</a></li>
+          <li class="list-item"><a href="#">Afastamentos</a></li>
+          <li class="list-item"><a href="#">Ponto</a></li>
+          <li class="list-item"><a href="#">Relatórios</a></li>
+          <li class="list-item"><a href="#">Perfil</a></li>
+        </ul>
+      </div>
     </header>
 
     <section class="content">
@@ -48,24 +67,26 @@
         <div class="actions maintenance">
           <h3>Manutenção de afastamentos</h3>
           <div class="actions-icon">
-            <a href=""><i class="fa-regular fa-calendar-xmark"></i></a>
+            <a href="#"><i class="fa-regular fa-calendar-xmark"></i></a>
           </div>
         </div>
 
         <div class="actions consultation">
           <h3>Consulta do ponto</h3>
           <div class="actions-icon">
-            <a href=""><i class="fa-regular fa-file-lines"></i></a>
+            <a href="#"><i class="fa-regular fa-file-lines"></i></a>
           </div>
         </div>
 
         <div class="actions registration">
           <h3>Registro do ponto</h3>
           <div class="actions-icon">
-            <a href=""><i class="fa-regular fa-circle-check"></i></a>
+            <a href="#"><i class="fa-regular fa-circle-check"></i></a>
           </div>
         </div>
       </div>
     </section>
+
+    <script src="src/javascript/script.js"></script>
   </body>
 </html>

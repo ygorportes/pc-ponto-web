@@ -24,7 +24,7 @@
   font-size: 32px;
   text-transform: uppercase;
   color: #000000c0;
-  text-shadow: 1px 1px 2px #FFF;
+  text-shadow: 1px 1px 2px #fff;
 }
 
 .navbar .navbar-title span {
@@ -35,11 +35,11 @@
   height: 3rem;
 }
 
-.navbar .navbar-links li{
+.navbar .navbar-links li {
   display: inline-block;
 }
 
-.navbar .navbar-links li:not(:last-of-type){
+.navbar .navbar-links li:not(:last-of-type) {
   margin-right: 2px;
 }
 
@@ -63,12 +63,24 @@
 }
 
 @keyframes shake {
-  0% { transform: rotate(0deg); }
-  20% { transform: rotate(-15deg); }
-  40% { transform: rotate(10deg); }
-  60% { transform: rotate(-10deg); }
-  80% { transform: rotate(5deg); }
-  100% { transform: rotate(0deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  40% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(-10deg);
+  }
+  80% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .bell-shake {
@@ -77,6 +89,11 @@
 
 .bell-shake:hover {
   animation: shake 0.5s;
+}
+
+.mobile_btn,
+.mobile_menu {
+  display: none;
 }
 
 .content .container {
@@ -113,7 +130,7 @@
   display: flex;
   flex-direction: column;
   align-items: center; /* isso centraliza tudo horizontalmente */
-  text-align: center;   /* isso centraliza o texto */
+  text-align: center; /* isso centraliza o texto */
 }
 
 .actions-icon {
@@ -128,10 +145,9 @@
   margin-top: 0.5rem;
 }
 
-
 .actions-icon i {
   font-size: 80px;
-  color: #FFF;
+  color: #fff;
   text-shadow: 1px 1px 2px #000;
   transition: transform 1.5s ease;
 }
@@ -150,12 +166,53 @@
 }
 
 .actions-icon a:hover {
-  background: rgba(0,0,0,0.05);
+  background: rgba(0, 0, 0, 0.05);
   border-radius: 50%;
   transition: background 0.2s;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 940px) {
+  .navbar .navbar-title {
+    font-size: 18px;
+  }
+  .navbar-links {
+    display: none;
+  }
+  .mobile_btn {
+    display: block;
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .mobile_menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mobile_nav_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    gap: 8px;
+    margin: 12px 0px;
+  }
+
+  .mobile_nav_list .list-item {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+  .mobile_nav_list .list-item a {
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+  }
+
   .content .container {
     display: flex;
     flex-direction: column;
