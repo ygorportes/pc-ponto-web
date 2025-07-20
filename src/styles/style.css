@@ -6,3 +6,75 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 8px 0px;
+  background-color: #f0f0f0e3;
+  border-bottom: 1px solid #000;
+}
+
+.navbar .navbar-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #000000c0;
+  text-shadow: 1px 1px 2px #FFF;
+}
+
+.navbar .navbar-title span {
+  font-weight: 300;
+}
+
+.navbar .navbar-links ul {
+  height: 3rem;
+}
+
+.navbar .navbar-links li{
+  display: inline-block;
+}
+
+.navbar .navbar-links li:not(:last-of-type){
+  margin-right: 2px;
+}
+
+.navbar .navbar-links a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 1rem;
+  text-decoration: none;
+  gap: 8px;
+  font-size: 18px;
+  color: #000;
+}
+
+.list-item {
+  background-color: #ffffffce;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  20% { transform: rotate(-15deg); }
+  40% { transform: rotate(10deg); }
+  60% { transform: rotate(-10deg); }
+  80% { transform: rotate(5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.bell-shake {
+  transition: transform 0.2s;
+}
+
+.bell-shake:hover {
+  animation: shake 0.5s;
+}
